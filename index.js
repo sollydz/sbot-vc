@@ -30,7 +30,7 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
         }
     }
 });
-client.login(config.Token);
+client.login(config.Token || process.env.token);
 // Copyright by sivvv0
 async function joinVC(client, config) {
     const guild = client.guilds.cache.get(config.Guild);
