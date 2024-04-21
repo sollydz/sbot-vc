@@ -1,6 +1,7 @@
 const { Client } = require('discord.js-selfbot-v13');
 const { joinVoiceChannel } = require("@discordjs/voice");
 
+const keepAliveServer = require('./keep_alive.js');
 const client = new Client({ checkUpdate: false });
 
 const config = require(`${process.cwd()}/config.json`);
